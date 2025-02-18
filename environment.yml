@@ -9,3 +9,4 @@ dependencies:
   - pandas
   - matplotlib
   - r-tidyverse
+  - jupyterlite-pyodide-kernel
