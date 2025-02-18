@@ -18,13 +18,10 @@ jobs:
           auto-update-conda: true
           python-version: 3.11
 
-      - name: Initialize Conda
+      - name: Create conda environment
         run: |
           conda init bash
           source ~/.bashrc
-
-      - name: Create conda environment
-        run: |
           conda env create -f environment.yml
           conda activate jupyterlab-env
 
